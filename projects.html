@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-indigo-600">Portfolio</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-indigo-600">About</a>
+                    <a href="projects.html" class="text-indigo-600 font-medium">Projects</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a>
+                </div>
+                <button id="menu-toggle" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white">
+        <div class="container mx-auto px-4 py-2">
+            <div class="flex flex-col space-y-3 pb-4">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-indigo-600">About</a>
+                <a href="projects.html" class="text-indigo-600 font-medium">Projects</a>
+                <a href="contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">My Projects</h1>
+                                <p class="text-gray-600 max-w-2xl mx-auto">Here are some of my recent frontend projects. Each project reflects my passion for creating beautiful, functional, and user-friendly digital experiences.</p>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <div class="h-48 overflow-hidden relative">
+                                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80" alt="Responsive Portfolio Website" class="w-full h-full object-cover">
+                                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                                <h3 class="text-white font-bold text-lg">Responsive Portfolio Website</h3>
+                                            </div>
+                                        </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                                                    <h3 class="text-xl font-bold text-gray-800">Responsive Portfolio Website</h3>
+                                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded">HTML/CSS/JS</span>
+                                                </div>
+                                                <p class="text-gray-600 mb-4">A fully responsive portfolio website with modern design and smooth animations.</p>
+                                                <div class="flex justify-between items-center">
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fab fa-github mr-2"></i> Code
+                                                    </a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                                    </a>
+                                                </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <div class="h-48 overflow-hidden relative">
+                                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1715&q=80" alt="E-commerce Website" class="w-full h-full object-cover">
+                                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                                <h3 class="text-white font-bold text-lg">E-commerce Website</h3>
+                                            </div>
+                                        </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                                                    <h3 class="text-xl font-bold text-gray-800">E-commerce Website</h3>
+                                                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">React</span>
+                                                </div>
+                                                <p class="text-gray-600 mb-4">A fully responsive e-commerce platform with cart functionality and payment processing.</p>
+                                                <div class="flex justify-between items-center">
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fab fa-github mr-2"></i> Code
+                                                    </a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                                    </a>
+                                                </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <div class="h-48 overflow-hidden relative">
+                                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Task Management App" class="w-full h-full object-cover">
+                                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                                <h3 class="text-white font-bold text-lg">Task Management App</h3>
+                                            </div>
+                                        </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                                                    <h3 class="text-xl font-bold text-gray-800">Task Management App</h3>
+                                                    <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">React</span>
+                                                </div>
+                                                <p class="text-gray-600 mb-4">A productivity app with drag-and-drop functionality and progress tracking.</p>
+                                                <div class="flex justify-between items-center">
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fab fa-github mr-2"></i> Code
+                                                    </a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                                    </a>
+                                                </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <div class="h-48 overflow-hidden relative">
+                                            <img src="https://images.unsplash.com/photo-1551650992-ee4fd47df41f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80" alt="Weather Dashboard" class="w-full h-full object-cover">
+                                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                                <h3 class="text-white font-bold text-lg">Weather Dashboard</h3>
+                                            </div>
+                                        </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                                                    <h3 class="text-xl font-bold text-gray-800">Weather Dashboard</h3>
+                                                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">JavaScript/API</span>
+                                                </div>
+                                                <p class="text-gray-600 mb-4">A weather dashboard with real-time updates and location-based forecasts.</p>
+                                                <div class="flex justify-between items-center">
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fab fa-github mr-2"></i> Code
+                                                    </a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                                    </a>
+                                                </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <div class="h-48 overflow-hidden relative">
+                                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Restaurant Website" class="w-full h-full object-cover">
+                                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                                <h3 class="text-white font-bold text-lg">Restaurant Website</h3>
+                                            </div>
+                                        </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                                                    <h3 class="text-xl font-bold text-gray-800">Restaurant Website</h3>
+                                                    <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">HTML/CSS</span>
+                                                </div>
+                                                <p class="text-gray-600 mb-4">A responsive restaurant website with menu display and online reservation system.</p>
+                                                <div class="flex justify-between items-center">
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fab fa-github mr-2"></i> Code
+                                                    </a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                                    </a>
+                                                </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <div class="h-48 overflow-hidden relative">
+                                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Blog Website" class="w-full h-full object-cover">
+                                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                                <h3 class="text-white font-bold text-lg">Blog Website</h3>
+                                            </div>
+                                        </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                                                    <h3 class="text-xl font-bold text-gray-800">Blog Website</h3>
+                                                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">React</span>
+                                                </div>
+                                                <p class="text-gray-600 mb-4">A modern blog website with responsive design and interactive features.</p>
+                                                <div class="flex justify-between items-center">
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fab fa-github mr-2"></i> Code
+                                                    </a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                                                        <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                                    </a>
+                                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold text-indigo-400">Ruby</h2>
+                    <p class="mt-2 text-gray-400">Frontend Developer & UI/UX Designer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Ruby. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
